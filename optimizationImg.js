@@ -39,3 +39,4 @@ export function addImgForLazyLoading(highTarget, src, highImgTarget) {
         document.addEventListener('scroll', onScroll); // addEventListener onScroll
     }
 }
+
