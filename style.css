@@ -1,0 +1,139 @@
+/* Основные стили */
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #0D0D0D;
+}
+
+.containerPage {
+    width: 1250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    background-color: #262626;
+    border-radius: 0px 0px 10px 10px;
+    transition: height 1s ease;
+}
+
+.actionHeader {
+    display: flex;
+    gap: 10px;
+}
+
+.actionHeader a {
+    transition: color 500ms ease;
+}
+
+.actionHeader a:hover {
+    color: #8C8C8C;
+}
+
+.mainContainer {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.containerInInformation {
+    background-color: #404040;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.sectionBlock {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #8C8C8C;
+    transition: width 1s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+
+    margin-left: auto;
+}
+
+.blockWidth {
+    width: 0px;
+}
+
+.sectionBlockTwo {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 0;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #8C8C8C;
+    transition: width 1s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    margin-right: auto;
+}
+
+.containerSecionAndImg {
+    display: flex;
+    align-items: center;
+}
+
+.containerSecionAndImg img {
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.homeContainerDeveloper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.containerDeveloper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.developerInformation {
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
