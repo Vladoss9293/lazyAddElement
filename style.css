@@ -159,19 +159,26 @@ header {
 
 .blockLanguage {
     margin-bottom: 10px;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
     border-radius: 10px;
+    transition: width 500ms ease;
 }
+
+
 
 .nameLanguage {
     font-size: 20px;
 }
 
 .ProgrammingLanguages {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    width: 20%;
+    justify-content: center;
+    width: 100%;
     transition: width 500ms ease;
 }

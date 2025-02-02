@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textLanguage = document.querySelector('.textLanguage'); // id div Element
     const lazyLoad__Img = document.querySelector('#FrontendInginer'); // id img Element
 
-    addImgForLazyLoading(targetLast, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIrJ0LPtx8bhmYCh0Gwm9wDFnN1nIJo39pxw&s', lazyLoad__Img);
+    addImgForLazyLoading(targetLast, './assets/img/FrontendInginer.jpg', lazyLoad__Img);
 
 
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             blockProgrammingWidth.forEach((section, index) => {
                 setTimeout(() => {
                     section.style.width = '100%';
-                }, index * 500)
+                }, index * 100)
             })
         }
     });
