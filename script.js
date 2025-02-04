@@ -1,5 +1,6 @@
 import { addImgForLazyLoading } from "./optimizationImg.js";
 import { visionElement } from "./visionElement.js";
+import { mouseTracking } from "./mouseTracking.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const blockWidth = [...document.querySelectorAll('.blockWidth')];
@@ -27,4 +28,33 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         }
     });
+
+
+
+
+
+
+    const modalClose = document.querySelector('.modalClose');
+    const modalBackground = document.querySelector('.modalBackground');
+
+
+    modalBackground.addEventListener('click', (e) => {
+        if (e.target === modalBackground) {
+            modalBackground.style.display = 'none';
+            callingTrackerMouse(30000);
+        }
+    })
+
+    modalClose.addEventListener('click', () => {
+        modalBackground.style.display = 'none';
+        callingTrackerMouse(30000);
+    })
+
+    function callingTrackerMouse(ms) {
+        mouseTracking(ms).then(res => {
+            if (res) modalBackground.style.display = 'block';
+        })
+    }
+
+    callingTrackerMouse(30000);
 });
